@@ -29,11 +29,11 @@ Android、Http Request、SQLite、Firebase
 首次開啟App會要求位置的存取權限，並且會依據當下的GPS經緯度利用Google Map API轉換成地址，擷取到位置訊息再使用Yahoo Weather API去查詢該地的即時天氣狀況，包含目前溫度、風速、風向、大氣、氣壓、天文、以及十日的天氣預報供使用者即時查閱。
 為了解決離線瀏覽的問題我們設計了一個資料庫存取這些政府公開資料，並由手機SQLite資料庫去實作，此外您可以使用此App在世界的任何地方，因此我們還特別加入了多國語言功能將介面英文化，還搭配不同的度量衡為使用者做個人化的設定，例如華視與攝氏的選擇。
 
-![](img/app/app-03-1.png)
+<img class='rwdImg' src="img/app/app-03-1.png">
 
 第二部分環境我們撈取行政院環保署的供該資料作為資料源，包含當地紫外線以及空氣品質AQI與PM2.5，在本App中不僅僅只是視覺畫呈現資訊，且依據當下的即時狀況未使用者做出即時的防護措施免於週遭的有害物質，此外資料撈取的依據我們是使用目前經緯度和環保署所提供的空氣品質監測站基本資料中的每筆測站經緯度利用Haversine formula大圓距離換算求面上兩點最短距離，找出哪筆測站資料與目前所在的位置最近，且提供給使用者資訊。
 
-![](img/app/app-03-2.png)
+<img class='rwdImg' src="img/app/app-03-2.png">
 
 ![](https://github.com/andy6804tw/OpenWeather/raw/master/Screenshot/demo.gif)
 
@@ -42,13 +42,12 @@ Android、Http Request、SQLite、Firebase
 ## 2017 嘉義黑蚵松 地方開放資料戰
 🥈獲獎名次：嘉義黑蚵松-地方開放資料戰(資料視覺化組)【第二名】
 
-![](img/app/app-03-5.png)
-![](img/app/app-03-3.jpg)
-![](img/app/app-03-4.jpg)
+<img class='rwdImg' src="img/app/app-03-5.png">
+<img class='rwdImg' src="img/app/app-03-3.jpg">
+<img class='rwdImg' src="img/app/app-03-4.jpg">
 
 參加經濟部工業局舉辦的Open Data黑客松競賽，運用政府所提供的公開資料做資料清理與視覺化，並釋放資料集與開源程式碼供民眾存取。
-![](img/app/app-03-5.jpg)
-
+<img class='rwdImg' src="img/app/app-03-5.jpg">
 
 GitHub: [Link](https://github.com/andy6804tw/OpenWeather)
 
