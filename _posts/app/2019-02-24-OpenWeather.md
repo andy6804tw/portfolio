@@ -39,9 +39,20 @@ Android、Http Request、SQLite、Firebase
 
 #####  因APP尚未繼續維護，暫時下架。
 
+## 2017 嘉義黑蚵松 地方開放資料戰
+🥈獲獎名次：嘉義黑蚵松-地方開放資料戰(資料視覺化組)【第二名】
+
+![](img/app/app-03-5.png)
+![](img/app/app-03-3.jpg)
+![](img/app/app-03-4.jpg)
+
 
 GitHub: [Link](https://github.com/andy6804tw/OpenWeather)
 
 重灌狂人報導: [Link](https://briian.com/42979/)
+
+經濟部工業局報導: [Link](https://opendata.tca.org.tw/index.php/article/readfull/4/15)
+
+2017 嘉義黑蚵松 地方開放資料黑客松獲獎作品介紹: [Link](https://opendata.tca.org.tw/index.php/article/readfull/4/22)
 
 #2017嘉義黑蚵松 #資料視覺化組 #第二名
