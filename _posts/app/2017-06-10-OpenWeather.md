@@ -4,7 +4,7 @@ subtitle: ""
 author: "APP"
 avatar: "img/icon/app.png"
 image: "img/app/app-03.png"
-date:   2017-02-24
+date:   2017-06-10
 ---
 
 Android、Http Request、SQLite、Firebase
@@ -45,6 +45,9 @@ Android、Http Request、SQLite、Firebase
 ![](img/app/app-03-5.png)
 ![](img/app/app-03-3.jpg)
 ![](img/app/app-03-4.jpg)
+
+參加經濟部工業局舉辦的Open Data黑客松競賽，運用政府所提供的公開資料做資料清理與視覺化，並釋放資料集與開源程式碼供民眾存取。
+![](img/app/app-03-5.jpg)
 
 
 GitHub: [Link](https://github.com/andy6804tw/OpenWeather)
