@@ -53,6 +53,9 @@ body.body--hidden .content--related {
 	-webkit-transition: opacity 300ms ease-in-out;
 	transition: opacity 300ms ease-in-out;
 }
+.codrops-header{
+	/* background: rgba(29, 29, 29, 0.185); */
+}
 
 a {
 	text-decoration: none;
@@ -82,7 +85,7 @@ a:focus {
 }
 
 .demo-4 .codrops-header h1 span {
-	color: #4f4c4c;
+	color: #ffffff;
 }
 
 .hidden {
@@ -107,11 +110,13 @@ a:focus {
 }
 
 .codrops-header h1 span {
-	font-size: .45em;
+	/* font-size: .45em;
 	display: block;
 	padding: .5em 0 1em;
-	color: #999;
+	color: #999; */
+	font-weight: bold;
 }
+
 /* Top Navigation Style */
 
 .codrops-links {
@@ -240,6 +245,15 @@ a:focus {
 		line-height: 1.2;
 	}
 }
+
+/* Banner tiyle */
+/* .sub-title{
+	margin: 0 auto;
+	width: fit-content; 
+  height: fit-content;
+	background-color: rgb(0, 54, 116);
+	color: #f0f0f0;
+} */
 
 /* RWD Markdown Image size */
 .rwdImg{
