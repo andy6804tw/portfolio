@@ -35,7 +35,7 @@ Android、Http Request、SQLite、AJAX、HTML5
 
 由蔡易霖、王士誠、羅葉丞三位同學組隊參加亞洲跨國黑客松，我們結合跨國資料，找出氣候與登革熱的關聯性，並製作網頁版登革熱地圖與APP「Dengue helper」打造一個專屬於登革熱災情的平台。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/auqstqmGV7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="rwdImg" height="350" src="https://www.youtube.com/embed/auqstqmGV7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Website: [Demo](https://andy6804tw.github.io/Weather-disease/Web/index.html)
 
