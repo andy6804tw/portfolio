@@ -232,6 +232,10 @@ a:focus {
 	max-width: 1366px;
 	margin: 0 auto;
 }
+.wrapper .cards h2{
+	font-weight: 300;
+	text-decoration: underline overline dotted rgb(75, 75, 75);
+}
 
 @media screen and (max-width: 50em) {
 	.codrops-header {
