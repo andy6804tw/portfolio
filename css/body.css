@@ -249,8 +249,9 @@ a:focus {
 /* Footer */
 #site-footer {
 	position: relative;
-	background-color: #051824;
-	height: 90px;
+	background-color: #003b5f18;
+	height: 40px;
+	margin-top: 50px;
   }
 .copy{
 	width: 100%;
