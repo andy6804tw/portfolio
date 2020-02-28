@@ -3,21 +3,25 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}"/>
-    <meta name="keywords" content="{{ site.keywords }}"/>
-    <meta name="author" content="{{ site.author }}"/>
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="keywords" content="{{ site.keywords }}" />
+    <meta name="author" content="{{ site.author }}" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/fonts/font-awesome/css/font-awesome.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/body.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/card.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/pattern.css"/>
-    <link rel="stylesheet" href="style.css" href="{{ site.baseurl }}/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/fonts/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/body.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/card.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/pattern.css" />
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/background.css">
 
     <!--[if IE]>
     <script type="text/javascript" src="js/vendors/html5.min.js"></script>
@@ -29,30 +33,32 @@ layout: compress
         }
     </script>
 </head>
-<body class="demo-1">
-<div class="container">
-    <header class="codrops-header" style="padding: 40px 0 0 0;">
-        <img src="{{ site.baseurl }}/img/icon/banner.jpg" style="width: 30%;">
-      <h1>Portfolio. <span>Coding is My Life</span></h1>
 
-    </header>
-    <div class="content">
-        <!-- trianglify pattern container -->
-        <div class="pattern pattern--hidden"></div>
-        <!-- cards -->
-        <div class="wrapper">
-            <!-- WEB -->
-            <div class="card cards">
-                <div class="card__container card__container--closed">
-                    <h2>WEB</h2>
-                </div>
-            </div><br><br><br>
-            <div style="clear: both;"></div>
-            {% for post in paginator.posts %}
-            {% if post.author == "WEB" %}
-            <div class="card" data-id="{{ post.id }}">
-                <div class="card__container card__container--closed">
-                    <!-- <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<body class="demo-1 hero">
+    <div class="container">
+        <header class="codrops-header" style="padding: 40px 0 0 0;">
+            <img src="{{ site.baseurl }}/img/icon/banner.jpg" style="width: 30%;">
+            <h1>Yi-Lin's Portfolio <span>I have my professional self-confidence and hope, as long as the efforts will be
+                    fruitful.</span></h1>
+
+        </header>
+        <div class="content">
+            <!-- trianglify pattern container -->
+            <div class="pattern pattern--hidden"></div>
+            <!-- cards -->
+            <div class="wrapper">
+                <!-- WEB -->
+                <div class="card cards">
+                    <div class="card__container card__container--closed">
+                        <h2>WEB</h2>
+                    </div>
+                </div><br><br><br>
+                <div style="clear: both;"></div>
+                {% for post in paginator.posts %}
+                {% if post.author == "WEB" %}
+                <div class="card" data-id="{{ post.id }}">
+                    <div class="card__container card__container--closed">
+                        <!-- <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
                         <defs>
                             <clipPath id="{{ post.id }}-clip-path">
@@ -62,47 +68,50 @@ layout: compress
                         <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
                             xlink:href="{{ site.baseurl }}/{{ post.image }}"></image>
                     </svg> -->
-                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" id='{{ post.id }}' onclick="openCard(id)" expanded="false">
-                        <defs>
-                            <clipPath id="{{ post.id }}-clip-path">
-                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
-                            </clipPath>
-                        </defs>
-                        <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200" xlink:href="{{ post.image }}"></image>
-                    </svg>
-                    <div class="card__content">
-                        <i class="card__btn-close fa fa-times" id='{{ post.id }}' onclick="closeCard(id)"></i>
-                        <div class="card__caption">
-                            <h2 class="card__title">{{ post.title }}</h2>
-                            <p class="card__subtitle">{{ post.subtitle }}</p>
-                        </div>
-                        <div class="card__copy">
-                            <div class="meta">
-                                <img class="meta__avatar" src="{{ site.baseurl }}/{{ post.avatar }}" />
-                                <span class="meta__author">{{ post.author }}</span>
-                                <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                        <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
+                            preserveAspectRatio="xMidYMid slice" id='{{ post.id }}' onclick="openCard(id)"
+                            expanded="false">
+                            <defs>
+                                <clipPath id="{{ post.id }}-clip-path">
+                                    <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                                </clipPath>
+                            </defs>
+                            <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
+                                xlink:href="{{ post.image }}"></image>
+                        </svg>
+                        <div class="card__content">
+                            <i class="card__btn-close fa fa-times" id='{{ post.id }}' onclick="closeCard(id)"></i>
+                            <div class="card__caption">
+                                <h2 class="card__title">{{ post.title }}</h2>
+                                <p class="card__subtitle">{{ post.subtitle }}</p>
                             </div>
-                            {{ post.content }}
+                            <div class="card__copy">
+                                <div class="meta">
+                                    <img class="meta__avatar" src="{{ site.baseurl }}/{{ post.avatar }}" />
+                                    <span class="meta__author">{{ post.author }}</span>
+                                    <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                                </div>
+                                {{ post.content }}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            {% endif %}
-            {% endfor %}
-            <!-- APP -->
-            <div style="clear: both;"></div>
-            <div class="card cards">
-                <div class="card__container card__container--closed">
-                    <h2>APP</h2>
-                </div>
-            </div><br><br><br>
-            <div style="clear: both;"></div>
-            {% for post in paginator.posts %}
-            {% if post.author == "APP" %}
-            <div class="card" data-id="{{ post.id }}">
-                <div class="card__container card__container--closed">
-                    <!-- <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                {% endif %}
+                {% endfor %}
+                <!-- APP -->
+                <div style="clear: both;"></div>
+                <div class="card cards">
+                    <div class="card__container card__container--closed">
+                        <h2>APP</h2>
+                    </div>
+                </div><br><br><br>
+                <div style="clear: both;"></div>
+                {% for post in paginator.posts %}
+                {% if post.author == "APP" %}
+                <div class="card" data-id="{{ post.id }}">
+                    <div class="card__container card__container--closed">
+                        <!-- <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
                                     <defs>
                                         <clipPath id="{{ post.id }}-clip-path">
@@ -112,51 +121,63 @@ layout: compress
                                     <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
                                         xlink:href="{{ site.baseurl }}/{{ post.image }}"></image>
                                 </svg> -->
-                    <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" id='{{ post.id }}' onclick="openCard(id)"
-                        expanded="false">
-                        <defs>
-                            <clipPath id="{{ post.id }}-clip-path">
-                                <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
-                            </clipPath>
-                        </defs>
-                        <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200" xlink:href="{{ post.image }}">
-                        </image>
-                    </svg>
-                    <div class="card__content">
-                        <i class="card__btn-close fa fa-times" id='{{ post.id }}' onclick="closeCard(id)"></i>
-                        <div class="card__caption">
-                            <h2 class="card__title">{{ post.title }}</h2>
-                            <p class="card__subtitle">{{ post.subtitle }}</p>
-                        </div>
-                        <div class="card__copy">
-                            <div class="meta">
-                                <img class="meta__avatar" src="{{ site.baseurl }}/{{ post.avatar }}" />
-                                <span class="meta__author">{{ post.author }}</span>
-                                <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                        <svg class="card__image" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200"
+                            preserveAspectRatio="xMidYMid slice" id='{{ post.id }}' onclick="openCard(id)"
+                            expanded="false">
+                            <defs>
+                                <clipPath id="{{ post.id }}-clip-path">
+                                    <polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+                                </clipPath>
+                            </defs>
+                            <image clip-path="url(#{{ post.id }}-clip-path)" width="1920" height="1200"
+                                xlink:href="{{ post.image }}">
+                            </image>
+                        </svg>
+                        <div class="card__content">
+                            <i class="card__btn-close fa fa-times" id='{{ post.id }}' onclick="closeCard(id)"></i>
+                            <div class="card__caption">
+                                <h2 class="card__title">{{ post.title }}</h2>
+                                <p class="card__subtitle">{{ post.subtitle }}</p>
                             </div>
-                            {{ post.content }}
+                            <div class="card__copy">
+                                <div class="meta">
+                                    <img class="meta__avatar" src="{{ site.baseurl }}/{{ post.avatar }}" />
+                                    <span class="meta__author">{{ post.author }}</span>
+                                    <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                                </div>
+                                {{ post.content }}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            {% endif %}
-            {% endfor %}
-            <!-- /cards -->
-            {% if paginator.previous_page or paginator.next_page %}
+                {% endif %}
+                {% endfor %}
+                <!-- /cards -->
+                {% if paginator.previous_page or paginator.next_page %}
                 {% include pagination.html %}
-            {% endif %}
-        </div>
+                {% endif %}
+            </div>
 
+        </div>
+        <!-- /container -->
     </div>
-    <!-- /container -->
-</div>
-<!-- JS -->
-<script src="{{ site.baseurl }}/js/vendors/trianglify.min.js"></script>
-<script src="{{ site.baseurl }}/js/vendors/TweenMax.min.js"></script>
-<script src="{{ site.baseurl }}/js/vendors/ScrollToPlugin.min.js"></script>
-<script src="{{ site.baseurl }}/js/vendors/cash.min.js"></script>
-<script src="{{ site.baseurl }}/js/Card-circle.js"></script>
-<script src="{{ site.baseurl }}/js/modern-blog.js"></script>
+    <!-- footer -->
+    <div id="site-footer">
+        <p class="copy"><a href="https://github.com/andy6804tw" style="color: white;"><i
+                    class="fab fa-github fa-lg"></i></a> &nbsp; made with
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojione/211/heavy-black-heart_2764.png"
+                style="width: 14px;"> coding </p>
+    </div>
+
+    <!-- JS -->
+    <script src="{{ site.baseurl }}/js/vendors/trianglify.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendors/TweenMax.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="{{ site.baseurl }}/js/vendors/cash.min.js"></script>
+    <script src="{{ site.baseurl }}/js/Card-circle.js"></script>
+    <script src="{{ site.baseurl }}/js/modern-blog.js"></script>
+    <script src="{{ site.baseurl }}/js/lazyload.js"></script>
 </body>
+
 </html>

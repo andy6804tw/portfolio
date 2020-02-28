@@ -265,54 +265,57 @@ function closeCard(id){
 }
 
 
+// /**
+//  * 
+//  * Background 
+//  */
+// var _mapPolygons = function (pattern) {
 
-var _mapPolygons = function (pattern) {
+//   // Append SVG to pattern container.
+//   $(SELECTORS.pattern).append(pattern);
 
-  // Append SVG to pattern container.
-  $(SELECTORS.pattern).append(pattern);
+//   // Convert nodelist to array,
+//   // Used `.childNodes` because IE doesn't support `.children` on SVG.
+//   polygonMap.paths = [].slice.call(pattern.childNodes);
 
-  // Convert nodelist to array,
-  // Used `.childNodes` because IE doesn't support `.children` on SVG.
-  polygonMap.paths = [].slice.call(pattern.childNodes);
+//   polygonMap.points = [];
 
-  polygonMap.points = [];
+//   polygonMap.paths.forEach(function (polygon) {
 
-  polygonMap.paths.forEach(function (polygon) {
+//     // Hide polygons by adding CSS classes to each svg path (used attrs because of IE).
+//     $(polygon).attr('class', CLASSES.polygon);
 
-    // Hide polygons by adding CSS classes to each svg path (used attrs because of IE).
-    $(polygon).attr('class', CLASSES.polygon);
+//     var rect = polygon.getBoundingClientRect();
 
-    var rect = polygon.getBoundingClientRect();
+//     var point = {
+//       x: rect.left + rect.width / 2,
+//       y: rect.top + rect.height / 2
+//     };
 
-    var point = {
-      x: rect.left + rect.width / 2,
-      y: rect.top + rect.height / 2
-    };
+//     polygonMap.points.push(point);
+//   });
 
-    polygonMap.points.push(point);
-  });
+//   // All polygons are hidden now, display the pattern container.
+//   $(SELECTORS.pattern).removeClass(CLASSES.patternHidden);
+// };
+// /**
+//      * Enum of CSS selectors.
+//      */
+// var SELECTORS = {
+//   pattern: '.pattern',
+//   card: '.card',
+//   cardImage: '.card__image',
+//   cardClose: '.card__btn-close'
+// };
+// // For options see: https://github.com/qrohlf/Trianglify
+// var pattern = Trianglify({
+//   width: window.innerWidth,
+//   height: window.innerHeight,
+//   cell_size: 90,
+//   variance: 1,
+//   stroke_width: 1,
+//   x_colors: 'random',
+//   y_colors: 'random'
+// }).svg(); // Render as SVG.
 
-  // All polygons are hidden now, display the pattern container.
-  $(SELECTORS.pattern).removeClass(CLASSES.patternHidden);
-};
-/**
-     * Enum of CSS selectors.
-     */
-var SELECTORS = {
-  pattern: '.pattern',
-  card: '.card',
-  cardImage: '.card__image',
-  cardClose: '.card__btn-close'
-};
-// For options see: https://github.com/qrohlf/Trianglify
-var pattern = Trianglify({
-  width: window.innerWidth,
-  height: window.innerHeight,
-  cell_size: 90,
-  variance: 1,
-  stroke_width: 1,
-  x_colors: 'random',
-  y_colors: 'random'
-}).svg(); // Render as SVG.
-
-_mapPolygons(pattern);
+// _mapPolygons(pattern);

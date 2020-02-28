@@ -35,7 +35,8 @@ Android、Http Request、SQLite、Firebase
 
 <img class='rwdImg' src="img/app/app-03-2.png">
 
-![](https://github.com/andy6804tw/OpenWeather/raw/master/Screenshot/demo.gif)
+<!-- ![](https://github.com/andy6804tw/OpenWeather/raw/master/Screenshot/demo.gif) -->
+<img class="lazyload" data-src="https://github.com/andy6804tw/OpenWeather/raw/master/Screenshot/demo.gif">
 
 #####  因APP尚未繼續維護，暫時下架。
 

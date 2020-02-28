@@ -54,7 +54,7 @@ HTML5、CSS3、JavaScript、pannallum.js
 
 燕巢圖書館360全景導覽，裡面有引導鈕可以切換館內各個場景並支援各種裝置，手機平板用戶建議橫放並開啟全螢幕模式。
 
-<img class='rwdImg' src="https://github.com/andy6804tw/yenchao-library-web-2018/raw/master/Screenshot/img03.gif">
+<img class="lazyload" data-src="https://github.com/andy6804tw/yenchao-library-web-2018/raw/master/Screenshot/img03.gif">
 
 VR圖書館導覽: [Link](https://andy6804tw.github.io/yenchao-library-web-2018/dist/pannallum.html)
 
