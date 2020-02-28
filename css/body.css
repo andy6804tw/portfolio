@@ -267,6 +267,7 @@ header img{
 
 /* Footer */
 #site-footer {
+	z-index: -1;
 	position: relative;
 	background-color: #003b5f18;
 	height: 40px;
