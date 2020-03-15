@@ -3,9 +3,9 @@ title: 10's Portfilio
 description: Tsai Yi Lin persional portfilio
 keywords: portfilio, website developer, AI, APP
 author: Tsai Yi Lin
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog/
-url: "https://andy6804tw.github.io" # the base hostname & protocol for your site
+baseurl: /portfolio # the subpath of your site, e.g. /blog/
+url: https://andy6804tw.github.io # the base hostname & protocol for your site
 gems: [jekyll-paginate,jekyll-seo-tag,jekyll-sitemap]
 paginate: 1000
-google_analytics: "UA-109365144-5"
-repository: "andy604tw/portfolio"
+google_analytics: UA-109365144-5
+repository: andy604tw/portfolio
